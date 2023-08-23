@@ -10,7 +10,7 @@ main{
     background-color: gray;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 /* header */
@@ -20,6 +20,9 @@ header{
     gap: 20px;
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 #headerItens{
