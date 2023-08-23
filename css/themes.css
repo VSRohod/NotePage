@@ -20,12 +20,12 @@
 .buttonLight:hover{
     background-color: white;
     color: rgb(0, 72, 255);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .buttonThemeLight{
     background-color: black;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 /* DARK THEME */
@@ -50,10 +50,10 @@
 .buttonDark:hover{
     background-color: #c9d4f1 ;
     color: rgb(38, 35, 35);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .buttonThemeDark{
     background-color: white;
-    transition: 1s;
+    transition: 0.5s;
 }

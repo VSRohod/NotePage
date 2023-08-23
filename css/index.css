@@ -97,8 +97,3 @@ button{
     color: white;
     background-color: transparent;
 }
-
-button:hover{
-    width: 205px;
-    height: 43px;
-}
