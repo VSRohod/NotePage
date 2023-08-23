@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotePage</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <header class="headerLight">
+            <div id="headerItens">
+                <div id="logoSpace">
+                    <h1>Notpage</h1>
+                    <div id="logo">
+                        <img src="img/logoDark.svg" alt="">
+                    </div>
+                </div>
+                <button id="themeButton" class="buttonThemeLight">
+                    <img src="img/moon-stars-fill.svg" alt="">
+                </button>
+            </div>
+        </header>
+
+        <textarea id="textodigitado" cols="30" rows="10" class="textAreaLight"></textarea>
+
+        <div id="changeOptions" class="changeOptionsLight">
+            <div class="changeGroup">
+                <input type="text" id="palavrabuscar" placeholder="O termo que deseja remover">
+                <input type="text" id="palavrasubstituir" placeholder="O termo que deseja substituir">
+            </div>
+            <div class="changeGroup">
+                <button type="button" id="trocar" class="buttonLight">Trocar apenas uma palavra</button>
+                <button type="button" id="trocarTodos" class="buttonLight">Trocar todas as palavras</button>
+            </div>
+            <div class="changeGroup">
+                <button type="button" id="salvar" class="buttonLight">Salvar</button>
+                <button type="button" id="resetar" class="buttonLight">Resetar</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

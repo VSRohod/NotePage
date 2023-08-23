@@ -1,0 +1,59 @@
+/* LIGHT THEME */
+.headerLight{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.textAreaLight{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.changeOptionsLight{
+    background-color: rgb(0, 72, 255);
+    color: black;
+    transition: 1s;
+}
+
+.buttonLight:hover{
+    background-color: white;
+    color: rgb(0, 72, 255);
+    transition: 1s;
+}
+
+.buttonThemeLight{
+    background-color: black;
+    transition: 1s;
+}
+
+/* DARK THEME */
+.headerDark{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.textAreaDark{
+    background-color: rgb(38, 35, 35);
+    color: #c9d4f1;
+    transition: 1s;
+}
+
+.changeOptionsDark{
+    background-color: rgb(38, 35, 35);
+    color: #c9d4f1;
+    transition: 1s;
+}
+
+.buttonDark:hover{
+    background-color: #c9d4f1 ;
+    color: rgb(38, 35, 35);
+    transition: 1s;
+}
+
+.buttonThemeDark{
+    background-color: white;
+    transition: 1s;
+}
