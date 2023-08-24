@@ -28,6 +28,16 @@
     transition: 0.5s;
 }
 
+.opcoesLight{
+    background-color:rgb(0, 72, 255);
+    transition: 0.5s;
+}
+
+.contadoresLight{
+    background-color: white;
+    transition: 0.5s;
+}
+
 /* DARK THEME */
 .headerDark{
     background-color: black;
@@ -55,5 +65,16 @@
 
 .buttonThemeDark{
     background-color: white;
+    transition: 0.5s;
+}
+
+.contadoresDark{
+    background-color: rgb(38, 35, 35);
+    color: rgb(241, 241, 241);
+    transition: 0.5s;
+}
+
+.opcoesDark{
+    background-color:rgb(38, 35, 35);
     transition: 0.5s;
 }

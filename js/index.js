@@ -1,4 +1,4 @@
-// seletores
+// seletores.on
 const textodigitado = document.querySelector("#textodigitado");
 const palavrabuscar = document.querySelector("#palavrabuscar");
 const palavrasubstituir = document.querySelector("#palavrasubstituir");
@@ -6,6 +6,10 @@ const trocar = document.querySelector("#trocar");
 const trocarTodos = document.querySelector("#trocarTodos");
 const salvarBtn = document.querySelector("#salvar");
 const resetarBtn = document.querySelector("#resetar");
+const contadorCaracteres = document.querySelector("#contadorCaracteres");
+const contadorPalavras = document.querySelector("#contadorPalavras");
+const downloadBtn = document.querySelector("#downloadBtn");
+const downloadBtnClose = document.querySelector("#popup-box-close");
 
 // eventos
 trocar.addEventListener("click", trocarTexto);
@@ -13,6 +17,9 @@ trocarTodos.addEventListener("click", trocarTodosTexto);
 salvarBtn.addEventListener("click", salvar);
 resetarBtn.addEventListener("click", resetar);
 document.addEventListener("mouseleave", verificarSalvo);
+textodigitado.addEventListener("input", contadores);
+downloadBtn.addEventListener("click", popUpDownload);
+downloadBtnClose.addEventListener("click", popUpDownloadClose);
 
 //local Storage
 var dadoSalvo = localStorage.getItem("text");
@@ -56,4 +63,25 @@ function trocarTodosTexto(){
             
     const textoFormatado = textodigitadoValue.replaceAll(palavrabuscarValue,palavrasubstituirValue);
     textodigitado.value = textoFormatado;
+}
+
+function contadores(){
+    var textodigitadoValue = $("#textodigitado").val()
+    var textodigitadoPalavras = textodigitadoValue.split(/\S+/).length -1;
+    $("#contadorPalavras").text(textodigitadoPalavras);
+
+    var textodigitadoCaracteres = textodigitadoValue.length;
+    $("#contadorCaracteres").text(textodigitadoCaracteres);
+}
+
+function popUpDownload(){
+    $(".popup-box").css({
+        "opacity":"1", "pointer-events":"auto"
+    });
+}
+
+function popUpDownloadClose(){
+    $(".popup-box").css({
+        "opacity":"0", "pointer-events":"0"
+    });
 }

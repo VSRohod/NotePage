@@ -25,7 +25,25 @@
             </div>
         </header>
 
+        <div class="popup-box">
+            <h2>Digite o nome do seu arquivo!</h2>
+            <input type="text" id="downloadFileName" placeholder="Digite o nome do seu arquivo">
+            <div id="downloadOptions">
+                <button id="downloadTxtOptionBtn" class="buttonLight">Download TXT</button>
+            </div>
+            <div id="buttonsPopUp">
+                <button id="popup-box-close">x</button>
+            </div>
+        </div>
+
+        <div id="opcoes" class="opcoesLight">
+            <button id="downloadBtn" class="buttonLight">Download</button>
+        </div>
         <textarea id="textodigitado" cols="30" rows="10" class="textAreaLight"></textarea>
+        <div id="contadores" class="contadoresLight">
+            <p>N° de caracteres <span id="contadorCaracteres">0</span></p>
+            <p>N° de palavras digitadas <span id="contadorPalavras">0</span></p>
+        </div>
 
         <div id="changeOptions" class="changeOptionsLight">
             <div class="changeGroup">
@@ -42,7 +60,10 @@
             </div>
         </div>
     </main>
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/FileSaver.js"></script>
     <script src="js/index.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/exportTxtFile.js"></script>
 </body>
 </html>
