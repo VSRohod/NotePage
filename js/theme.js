@@ -19,7 +19,7 @@ function mudarTema(){
         textareaTheme.classList.replace("textAreaDark","textAreaLight");
         changeOptionsTheme.classList.replace("changeOptionsDark","changeOptionsLight");
         allButtonTheme.classList.replace("buttonDark","buttonLight");
-        allButtonTheme.classList.replace("buttonDark","buttonLight");
+        contadoresTheme.classList.replace("contadoresDark","contadoresLight");
         opcoesTheme.classList.replace("opcoesDark","opcoesLight");
         buttonTheme.innerHTML = "<img src='img/moon-stars-fill.svg' alt=''>";
         logoTheme.innerHTML = "<img src='img/logoDark.svg' alt=''>";
